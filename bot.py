@@ -22,7 +22,7 @@ class Bot:
     """
 
     def __init__(self):
-        self.team = "TeamName"  # This is your team name
+        self.team = "mightyBoat"  # This is your team name
         # This is the course that the ship has to follow
         self.course = [
             Checkpoint(latitude=43.797109, longitude=-11.264905, radius=50),
@@ -100,7 +100,7 @@ class Bot:
             Optionally, a sail value between 0 and 1 can be set.
         """
         # Initialize the instructions
-        instructions = Instructions()
+        instructions = Instructions(sail=.9)
 
         # TODO: Remove this, it's only for testing =================
         current_position_forecast = forecast(
